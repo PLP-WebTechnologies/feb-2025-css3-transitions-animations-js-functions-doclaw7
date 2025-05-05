@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: #f9f9f9;
+    transition: background-color 0.5s ease;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  #saveBtn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+    transition: background-color 0.3s ease;
+  }
+  
+  #saveBtn:hover {
+    background-color: #2ecc71;
+  }
+  
+  #message {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* CSS Animation */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  #animatedImage {
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  #animatedImage.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
